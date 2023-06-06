@@ -1,0 +1,9 @@
+<app-nav-header (themeEvent)="setTheme($event)"></app-nav-header>
+<ion-content [fullscreen]="true" class="ion-padding rmvscrollbar">
+  <div class="wrapper" [class.dark-theme]="dark">
+    <main class="main">
+      <ion-router-outlet></ion-router-outlet>
+    </main>
+    <app-nav-footer></app-nav-footer>
+  </div>
+</ion-content>

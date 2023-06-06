@@ -1,0 +1,15 @@
+footer {
+  background-color: var(--ion-background-color);
+}
+
+footer>.row {
+  padding-top: 40px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--ion-text-color);
+  outline: none;
+}

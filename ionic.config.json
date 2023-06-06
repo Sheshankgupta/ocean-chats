@@ -1,0 +1,7 @@
+{
+  "name": "Oceanchats",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

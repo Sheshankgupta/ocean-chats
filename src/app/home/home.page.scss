@@ -1,0 +1,82 @@
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+ion-content::part(scroll) {
+  padding: 0;
+}
+
+.wrapper {
+  overflow-y: auto;
+  height: 100vh;
+  background: url('/assets/defaults/bcg-light.png') no-repeat center / cover fixed;
+
+  &.dark-theme {
+    background: url('/assets/defaults/bcg.png') no-repeat center / cover fixed;
+  }
+}
+
+main.main div.container {
+  font-family: hbofamily;
+  max-width: none;
+  min-height: 100vh;
+  margin: 0;
+  border-radius: 0 0 40px 40px;
+  overflow-y: auto;
+}
+
+.anchor {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00f1fd;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.anchor:hover {
+  background: #025e63;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(4, 66, 70),
+    0 0 25px rgb(4, 66, 70),
+    0 0 50px rgb(4, 66, 70),
+    0 0 100px rgb(4, 66, 70);
+}
+
+.typed {
+  color: var(--ion-text-color);
+}
+
+.head {
+  background-color: #fff;
+  color: rgb(4, 66, 70);
+  min-width: 10vw;
+  max-width: 60vw;
+  font-size: 50px;
+  display: inline-block;
+  border-radius: 20px 20px 20px 0;
+}
+
+.ans {
+  display: inline-block;
+  background-color: rgb(4, 66, 70);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px 20px 0 20px;
+  min-width: calc(100% - 10vw);
+  max-width: 60vw;
+  margin-left: 10vw;
+}

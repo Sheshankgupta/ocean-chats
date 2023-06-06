@@ -1,0 +1,38 @@
+<footer class="mt-5" style="padding-inline: 100px;">
+  <div class="row">
+    <div class="col-sm-4 b-right pt-2">
+      <div class="d-flex align-items-center">
+        <img src="/assets/defaults/logo.png" alt="logo" height="40">
+        <span class="foot">Ocean Chats</span>
+      </div>
+      <p class="foot-sub mt-5">
+        support@oceanchats.com
+      </p>
+    </div>
+    <div class="col-sm-4 text-center b-right pt-2">
+      <p class="foot">Some Important Links</p>
+      <p><a routerLink='/auth/login' routerLinkActive="router-link-active" class="foot-sub"> Login</a></p>
+      <p><a routerLink='/auth/register' routerLinkActive="router-link-active" class="foot-sub"> Register</a></p>
+    </div>
+    <div class="col-sm-4 text-center pt-2">
+      <p class="foot">Need Help</p>
+      <form action="" method="post">
+        <input type="text" name="helpname" id="helpname"><br /><br />
+        <input type="email" name="helpemail" id="helpemail"><br /><br />
+        <textarea name="helpmessage" id="helpmessage" style="resize:none;"></textarea><br /><br />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="col-sm-12 text-center pt-2">
+      <form action="" method="post" class="d-flex justify-content-center mt-3">
+        <input type="email" name="email" id="subscribeemail" style="width: 400px;">
+        <button type="submit" class="btn btn-danger" style="border-radius: 0 10px 10px 0;">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="credit">
+    <div class="d-flex justify-content-center foot-sub mt-5">
+      &copy; Ocean Chats 2023 - {{year()}}
+    </div>
+  </div>
+</footer>
